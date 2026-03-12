@@ -5,7 +5,9 @@
 
 ## Project Overview
 
-This project analyzes Canadian federal procurement contract data using the **CanadaBuys Contract History** dataset. The objective was to build a realistic end-to-end analytics workflow that mirrors the type of work performed in business analysis and data preparation projects.
+This project analyzes Canadian federal procurement contract data using the **CanadaBuys Contract History** dataset. It was designed as an end-to-end analytics workflow covering raw data ingestion, SQL-based cleaning and transformation, data validation, and dashboard development in Power BI.
+
+The goal was to turn multi-year raw contract history data into a clean, analysis-ready dataset that supports procurement trend analysis and reporting.
 
 The project covers the full pipeline from raw CSV ingestion to SQL-based cleaning and transformation, followed by dashboard development in Power BI.
 
@@ -47,10 +49,22 @@ Key fields include:
 
 Because the source is a **contract history** dataset, contracts can appear across multiple rows due to amendments and revisions.
 
+## Tools Used
+
+**Data Ingestion**
+- Python
+
+**Data Processing**
+- SQL Server
+- SQL Server Management Studio (SSMS)
+
+**Data Visualization**
+- Power BI Desktop
+
 ## Dataset Scale
 
-The project processes approximately:
-
+**The project processes approximately:
+**
 - 120,000+ procurement contract records
 - 6 fiscal years of contract history
 - multiple procurement categories and suppliers
@@ -232,31 +246,6 @@ invalid value cleanup for monetary fields
 date consistency filtering
 
 derived analytical fields for reporting
-
-
-## Tools Used
-
-Python
-
-SQL Server
-
-SQL Server Management Studio (SSMS)
-
-Power BI Desktop
-
-Project Deliverables
-
-This project includes:
-
-Python ingestion script
-
-SQL cleaning and transformation script
-
-cleaned analytical dataset
-
-process log documenting the workflow
-
-Power BI dashboard for procurement analysis
 
 ## Outcome
 
