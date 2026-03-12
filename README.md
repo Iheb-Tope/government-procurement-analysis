@@ -113,7 +113,7 @@ Power BI dashboard
 Government_Procurement_Dashboard
 Project Workflow
 
-**1. Raw Data Ingestion**
+## 1. Raw Data Ingestion
 
 Six fiscal-year CSV files were imported into SQL Server using a Python ingestion script after initial attempts with the SSMS Flat File Import Wizard produced schema and datatype issues.
 
@@ -131,7 +131,7 @@ contracts_2024_2025_raw
 
 contracts_2025_2026_raw
 
-**2. Data Consolidation**
+## 2. Data Consolidation
 
 The yearly raw tables were combined into a single staging table:
 
@@ -139,7 +139,7 @@ contracts_all_raw
 
 This created one consolidated raw layer covering six fiscal years of procurement history.
 
-**3. Data Cleaning and Transformation**
+## 3. Data Cleaning and Transformation
 
 A cleaned analytical table named contracts_history_clean was built in SQL Server.
 
@@ -169,7 +169,7 @@ converting invalid monetary values to NULL
 
 removing exact duplicate rows
 
-**4. Feature Engineering**
+## 4. Feature Engineering
 
 Additional analytical fields were created to support reporting and segmentation:
 
@@ -179,7 +179,7 @@ contract_value_category
 
 These fields were added to make trend analysis and contract value grouping easier in Power BI.
 
-**5. Data Validation**
+## 5. Data Validation
 
 Final validation checks were performed to confirm the quality of the cleaned dataset, including:
 
@@ -195,7 +195,7 @@ duplicate detection
 
 date anomaly checks
 
-**6. Dashboard Development**
+## 6. Dashboard Development
 
 The cleaned analytical table was exported to CSV and used as the source for a Power BI dashboard.
 
@@ -213,7 +213,7 @@ procurement methods
 
 department-level procurement patterns
 
-**SQL Cleaning Highlights**
+## SQL Cleaning Highlights 
 
 The SQL pipeline includes logic for:
 
@@ -234,7 +234,7 @@ date consistency filtering
 derived analytical fields for reporting
 
 
-**Tools Used**
+## Tools Used
 
 Python
 
@@ -258,7 +258,7 @@ process log documenting the workflow
 
 Power BI dashboard for procurement analysis
 
-**Outcome**
+## Outcome
 
 The final result of this project is a cleaned and structured procurement dataset prepared from six years of federal contract history data and transformed into a dashboard-ready analytical source.
 
