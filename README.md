@@ -6,8 +6,6 @@ This project analyzes Canadian federal procurement contract data using the **Can
 
 The project covers the full pipeline from raw CSV ingestion to SQL-based cleaning and transformation, followed by dashboard development in Power BI.
 
-This project processes ~120k procurement contract records across six fiscal years.
-
 This project demonstrates:
 
 - Python-based data ingestion
@@ -22,7 +20,6 @@ This project demonstrates:
 ## Business Objective
 
 The purpose of this project is to identify procurement patterns and trends in Canadian federal contract history data and prepare an analysis-ready dataset that can support reporting, trend analysis, and process improvement discussions.
----
 
 ## Data Source
 
@@ -46,6 +43,14 @@ Key fields include:
 - GSIN and UNSPSC classifications
 
 Because the source is a **contract history** dataset, contracts can appear across multiple rows due to amendments and revisions.
+
+## Dataset Scale
+
+The project processes approximately:
+
+- 120,000+ procurement contract records
+- 6 fiscal years of contract history
+- multiple procurement categories and suppliers
 
 ## Data Availability
 
