@@ -6,6 +6,8 @@ This project analyzes Canadian federal procurement contract data using the **Can
 
 The project covers the full pipeline from raw CSV ingestion to SQL-based cleaning and transformation, followed by dashboard development in Power BI.
 
+This project processes ~120k procurement contract records across six fiscal years.
+
 This project demonstrates:
 
 - Python-based data ingestion
@@ -20,14 +22,6 @@ This project demonstrates:
 ## Business Objective
 
 The purpose of this project is to identify procurement patterns and trends in Canadian federal contract history data and prepare an analysis-ready dataset that can support reporting, trend analysis, and process improvement discussions.
-
-The project was designed to simulate a practical analytics workflow relevant to roles such as:
-
-- Business Analyst
-- Data Analyst
-- Solutions Engineer
-- BI Analyst
-
 ---
 
 ## Data Source
@@ -52,6 +46,24 @@ Key fields include:
 - GSIN and UNSPSC classifications
 
 Because the source is a **contract history** dataset, contracts can appear across multiple rows due to amendments and revisions.
+
+## Data Availability
+
+The original dataset used in this project comes from the Government of Canada Open Data Portal:
+
+CanadaBuys Contract History Dataset
+
+Due to file size limits on GitHub, the cleaned dataset (`contracts_history_clean.csv`) is not stored in this repository.
+
+To reproduce the dataset:
+
+1. Download the original contract history files from the Government of Canada Open Data Portal.
+2. Load the CSV files using the Python ingestion script:
+   load_all_procurement_data.py
+3. Run the SQL cleaning pipeline:
+   contracts_history_cleaning_script.sql
+
+This will generate the final analytical table used in the Power BI dashboard.
 
 ---
 
@@ -92,6 +104,7 @@ contracts_history_clean.csv
 Power BI dashboard
 Government_Procurement_Dashboard
 Project Workflow
+
 **1. Raw Data Ingestion**
 
 Six fiscal-year CSV files were imported into SQL Server using a Python ingestion script after initial attempts with the SSMS Flat File Import Wizard produced schema and datatype issues.
