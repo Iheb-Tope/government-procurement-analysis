@@ -212,28 +212,6 @@ date consistency filtering
 
 derived analytical fields for reporting
 
-This structure reflects a realistic SQL-based data preparation workflow rather than a simple dashboard-only project.
-
-**Repository Structure**
-
-government-procurement-analysis/
-│
-├── python/
-│   └── load_all_procurement_data.py
-│
-├── sql/
-│   └── contracts_history_cleaning_script.sql
-│
-├── data/
-│   └── contracts_history_clean.csv
-│
-├── dashboard/
-│   └── Government_Procurement_Dashboard.pbix
-│
-├── docs/
-│   └── process_log.md
-│
-└── README.md
 
 **Tools Used**
 
